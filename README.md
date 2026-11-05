@@ -15,15 +15,17 @@ In this lab, you learned about the basic building block of sequential circuits: 
 Cynthia Morales, Amanda Migliori
 
 ## Summary
-we made a circut that takes in a byte of memory, stores it in one of 4 memory cells, and can then output it to the lights using a multiplexer
+We made a circuit that takes in a byte of memory, stores it in one of 4 memory cells based on an address signal, and can then can output a chosen byte to the lights. This was a struggle to get working, but in the end we made it. thus why this is being turned in a week late :).
+
 
 ## Lab Questions
 
 ###  Why can we not just use structural Verilog to implement latches?
-you get an error because of the combinatorial loop. And it wont synthasize 
+Structural Verilog cannot be used to implement latches because they are sequential functions in nature. It will not
+synthesize in a combinatorial loop and will send an error.
 
 ### What is the meaning of always @(*) in a sensitivity block?
-using @(*) means that all variables in the module will be used in the always block. 
+Using @(*) means that all variables in the module will be considered and available in the sensitivity block. 
 
 ### What importance is memory to digital circuits?
-being able to remeber and store information is like the cornerstone of digital computing. Being able to remeber alows you to do advanced logic. Being able to remeber lets you do like everything. 
+Memory is important to digital circuits because being able to remember and store information is like the cornerstone of digital computing. Being able to remember allows you to do advanced logic. Being able to remember lets you do like everything. It lets you remember your promise. 
